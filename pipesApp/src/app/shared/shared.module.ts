@@ -5,13 +5,16 @@ import { PrimrNgModule } from '../primr-ng/primr-ng.module';
 
 
 
+
+
 @NgModule({
   declarations: [
     MenuComponent
   ],
   imports: [
     CommonModule,
-    PrimrNgModule
+    PrimrNgModule,
+
   ],
   exports: [
     MenuComponent
