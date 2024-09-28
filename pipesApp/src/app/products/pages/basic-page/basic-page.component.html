@@ -1,24 +1,47 @@
 <p-panel header="Pipes basicos" class="p-1">
-
-  <p>
-    Pipes incluidos en Angular
-  </p>
+  <p>Pipes incluidos en Angular</p>
 </p-panel>
 
 <div class="grid">
   <div class="col-12 md:col-4">
     <p-card header="uppercase">
-      {{nameLower | uppercase}}
+      {{ nameLower | uppercase }}
     </p-card>
-   </div>
+  </div>
+
   <div class="col-12 md:col-4">
-    <p-card header="uppercase">
-      {{nameUpper | lowercase}}
+    <p-card header="lowercase">
+      {{ nameUpper | lowercase }}
     </p-card>
-   </div>
+  </div>
+
   <div class="col-12 md:col-4">
-    <p-card header="uppercase">
-      {{fullName | titlecase}}
+    <p-card header="titlecase">
+      {{ fullName | titlecase }}
     </p-card>
-   </div>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <ul>
+        <li>fecha</li>
+        <li>fecha | date  </li>
+        <li>fecha | date:'short'</li>
+        <li>fecha | date:'long'</li>
+        <li>fecha | date:'MMMM'</li>
+      </ul>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <ul>
+        <li> {{customDate}} </li>
+        <li> {{customDate | date}} </li>
+        <li> {{customDate | date:'short'}} </li>
+        <li> {{customDate | date:'long'}} </li>
+        <li> {{customDate | date:'MMMM'}} </li>
+      </ul>
+    </p-card>
+  </div>
 </div>
