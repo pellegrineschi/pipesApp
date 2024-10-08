@@ -6,6 +6,7 @@ import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelModule } from 'primeng/panel';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { ToolbarModule } from 'primeng/toolbar';
 
 
 
@@ -19,7 +20,8 @@ import { PanelMenuModule } from 'primeng/panelmenu';
     ButtonModule,
     CardModule,
     FieldsetModule,
-    PanelModule
+    PanelModule,
+    ToolbarModule
   ]
 
 })
